@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = init_chat_model("anthropic:claude-3-5-sonnet-latest")
+llm = init_chat_model("deepseek:deepseek-chat")
 
 
 class State(TypedDict):
@@ -38,3 +38,4 @@ user_input = input("Enter a message: ")
 state = graph.invoke({"messages": [{"role": "user", "content": user_input}]})
 
 print(state["messages"][-1].content)
+

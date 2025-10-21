@@ -9,7 +9,7 @@ from typing_extensions import TypedDict
 load_dotenv()
 
 llm = init_chat_model(
-    "anthropic:claude-3-5-sonnet-latest"
+    "deepseek:deepseek-chat"
 )
 
 
